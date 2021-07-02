@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5px 0;
+}
+.slide-show {
+  height: 500px;
+}

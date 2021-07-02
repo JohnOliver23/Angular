@@ -15,6 +15,10 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
 import { ImoveisPageComponent } from './components/imoveis-page/imoveis-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { ImovelCardComponent } from './components/imovel-card/imovel-card.component';
+import { ImoveisSlideShowComponent } from './components/imoveis-slide-show/imoveis-slide-show.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomePageComponent,
     SobrePageComponent,
     ImoveisPageComponent,
+    ImovelCardComponent,
+    ImoveisSlideShowComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatListModule,
     HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
