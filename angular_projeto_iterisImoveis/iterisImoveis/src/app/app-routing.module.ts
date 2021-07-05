@@ -4,6 +4,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ImoveisPageComponent } from './components/imoveis-page/imoveis-page.component';
 import { MenuTemplateComponent } from './components/menu-template/menu-template.component';
 import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
+import { CadastroImovelPageComponent } from './components/cadastro-imovel-page/cadastro-imovel-page.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'imoveis',
         component: ImoveisPageComponent,
+      },
+      {
+        path: 'novo',
+        component: CadastroImovelPageComponent,
       },
     ],
   },

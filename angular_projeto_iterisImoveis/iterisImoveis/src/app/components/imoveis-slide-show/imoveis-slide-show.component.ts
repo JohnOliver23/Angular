@@ -20,8 +20,6 @@ export class ImoveisSlideShowComponent implements OnInit {
 
   private inicializar(dadosApi: ImoveisApiModel[]): void {
     this.imageSources = dadosApi.map((data) => data.image);
-    console.log(this.imageSources);
-    //this.definirImagem();
   }
 
   @ViewChild('slideshow') slideshow: any;

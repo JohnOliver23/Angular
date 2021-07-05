@@ -18,7 +18,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { ImovelCardComponent } from './components/imovel-card/imovel-card.component';
 import { ImoveisSlideShowComponent } from './components/imoveis-slide-show/imoveis-slide-show.component';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
+import { CadastroImovelPageComponent } from './components/cadastro-imovel-page/cadastro-imovel-page.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     ImoveisPageComponent,
     ImovelCardComponent,
     ImoveisSlideShowComponent,
+    CadastroImovelPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +48,11 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatListModule,
     HttpClientModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatSnackBarModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
